@@ -1,0 +1,75 @@
+*{
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    min-height: 200vh;
+    background-color: rgb(34, 34, 34);
+    color: white;
+    
+}
+
+/*Header*/
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 50px;
+    padding-top: 40px;
+    flex-wrap: wrap;
+    position: fixed;
+    left: 0;
+    padding-left: 30px;
+    padding-right: 30px;
+    width: 100%;
+    transition: 0.3s ease-in-out;
+}
+
+header .logo{
+    font-size: 48px;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+header .links a{
+    margin-right: 40px;
+    font-size: 20px;
+    text-decoration: none;
+    color: white;
+    transition: 0.3s ease-in-out;
+    cursor: pointer;
+}
+
+header .links a:hover{
+    letter-spacing: 1.5px;
+}
+
+header .button button{
+    height: 40px;
+    width: 100px;
+    margin-right: 20px;
+    outline: none;
+    border-radius: 10px;
+    color: white;
+    font-size: 15px;
+    text-transform: uppercase;
+    transition: 0.07s ease-in-out;
+    cursor: pointer;
+}
+
+header button:hover{
+    transform: scale(1.1)
+}
+
+/*Header Sticky Navs */ 
+
+header.header.sticky,
+header.header.sticky a{
+    width: 100%;
+    padding-top: 0;
+    height: 80px;
+    color: black;
+    background-color: white;
+}
