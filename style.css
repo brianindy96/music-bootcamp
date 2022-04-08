@@ -92,14 +92,15 @@ header.header.sticky .logo{
 
 .academic{
     min-height: 100vh;
-    border-bottom: white 1px solid;
     padding-top: 30px;
     display: flex;
     width: 100%;
     flex-direction: column;
+    flex-wrap: wrap;
 }
 
-.container-one{
+.pics-container{
+    min-height: auto;
     margin-top: 30px;
     display: flex;
     align-items: center;
@@ -108,7 +109,6 @@ header.header.sticky .logo{
     flex-wrap: wrap;
     width: 100vw;
     grid-template-columns: repeat(3,1fr);
-    height: auto;
 }
 
 .headline{
@@ -119,6 +119,30 @@ header.header.sticky .logo{
 
 .card{
     height: 500px;
-    width: 400px;
-    border: 1px solid white;
+    width: 450px;
+    margin: 20px;
+}
+
+.card > img{
+    width: 100%;
+    border-radius: 30px;
+    height: 100%;
+    object-fit: cover;
+    transition: ease-in-out 0.07s;
+}
+
+.card > img:hover{
+    transform: scale(1.1);
+}
+
+.card-caps > h3{
+    margin-top: 20px;
+    margin-bottom: 10px;
+    font-size: 1.3rem;
+}
+
+.card-caps > p{
+    padding: 20px;
+    padding-top: 0;
+    line-height: 1.5rem;
 }
