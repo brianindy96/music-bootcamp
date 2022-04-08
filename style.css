@@ -91,7 +91,7 @@ header.header.sticky .logo{
 /* Academics */
 
 .academic{
-    height: 100vh;
+    min-height: 100vh;
     border-bottom: white 1px solid;
     padding-top: 30px;
     display: flex;
@@ -100,9 +100,25 @@ header.header.sticky .logo{
 }
 
 .container-one{
-    width: 100%;
+    margin-top: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    text-align: center;
+    flex-wrap: wrap;
+    width: 100vw;
+    grid-template-columns: repeat(3,1fr);
+    height: auto;
 }
 
 .headline{
     text-align: center;
+    padding-bottom: 30px;
+    font-size: 1.5rem;
+}
+
+.card{
+    height: 500px;
+    width: 400px;
+    border: 1px solid white;
 }
